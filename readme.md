@@ -49,14 +49,3 @@ text2image-flask/
 │   └── generated.png
 └── requirements.txt
 ```
-
-## 💬 Prompt Example
-
-```
-"A futuristic cyberpunk city with neon lights and flying cars"
-```
-
-## 📸 Demo
-
-_Add screenshot or GIF here_
-![App Screenshot](static/screenshot.png)
