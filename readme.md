@@ -1,73 +1,62 @@
-🖼️ Text-to-Image Generator (Stable Diffusion + Flask)
-Turn your words into stunning AI-generated visuals! This project is a lightweight Flask web app that uses 🤗 Hugging Face's Stable Diffusion models to generate images from text prompts — optimized for GPU use (e.g., NVIDIA RTX 3050) and styled with a retro-themed UI.
+# 🖼️ Text-to-Image Generator (Stable Diffusion + Flask)
 
-🚀 Features
-🧠 Text prompt → AI-generated image
+Turn your words into stunning AI-generated visuals. A lightweight Flask app using Hugging Face’s Stable Diffusion, optimized for GPU (e.g. RTX 3050) and styled with a retro UI.
 
-⚡ GPU-accelerated (torch + FP16 inference)
+## 🚀 Features
 
-🎨 Retro-style web interface
+- Text prompt to image generation  
+- GPU-accelerated with FP16 inference  
+- Retro-style frontend  
+- Simple Flask backend  
+- Powered by `diffusers` + Hugging Face  
 
-🪶 Lightweight, responsive, and easy to use
+## 🖥️ Tech Stack
 
-🔌 Powered by diffusers and Hugging Face Hub
+- Python 3.10+  
+- Flask  
+- Diffusers (`runwayml/stable-diffusion-v1-5`)  
+- Torch (CUDA enabled)  
+- HTML/CSS  
 
-🖥️ Tech Stack
-Python 3.10+
+## 📦 Installation
 
-Flask
-
-Diffusers (runwayml/stable-diffusion-v1-5)
-
-Torch (CUDA + FP16 enabled)
-
-HTML/CSS (Retro UI)
-
-📦 Installation
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/your-username/text2image-flask.git
 cd text2image-flask
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
-🧪 Run Locally
-bash
-Copy
-Edit
+```
+
+## 🧪 Run Locally
+
+```bash
 python app.py
-Visit http://localhost:5000 in your browser and start generating!
+```
 
-📁 Project Structure
-csharp
-Copy
-Edit
+Open `http://localhost:5000` in your browser.
+
+## 📁 Project Structure
+
+```
 text2image-flask/
-├── app.py             # Flask server
-├── generate.py        # Stable Diffusion pipeline
+├── app.py
+├── generate.py
 ├── templates/
-│   └── index.html     # Web interface
+│   └── index.html
 ├── static/
-│   └── style.css      # Retro UI styling
-├── static/generated.png  # Output image (auto-overwritten)
+│   ├── style.css
+│   └── generated.png
 └── requirements.txt
-📸 Demo
-Add screenshot here if you want
+```
 
-🧠 Prompt Example
-arduino
-Copy
-Edit
+## 💬 Prompt Example
+
+```
 "A futuristic cyberpunk city with neon lights and flying cars"
-💡 Future Ideas
-🗂️ Save past generations
+```
 
-⬇️ Download button for images
+## 📸 Demo
 
-📦 Deploy on Hugging Face Spaces or Render
-
-🧩 Add API endpoint support
-
-🛡️ License
-MIT License © YourName
+_Add screenshot or GIF here_
+![App Screenshot](static/screenshot.png)
