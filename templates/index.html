@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to Image Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Text-to-Image Generator</h1>
+    <p class="desc">Enter a detailed description and watch it turn into art using AI!</p>
+    <form method="POST">
+      <input type="text" name="prompt" placeholder="e.g. a retro-futuristic city at night" required>
+      <button type="submit">Generate</button>
+    </form>
+
+    {% if image %}
+      <div class="output">
+        <h2>✨ Result:</h2>
+        <img src="{{ image }}" alt="Generated Image">
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
