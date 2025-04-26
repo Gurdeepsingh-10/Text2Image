@@ -17,7 +17,8 @@ pipe = StableDiffusionPipeline.from_pretrained(
 pipe.enable_model_cpu_offload()
 pipe.enable_attention_slicing()
 
-def generate_image(prompt, output_path="static/generated.png", steps=50, scale=9.0, seed=42):
+def generate_image(prompt, output_path=r"text2image/generate.png", steps=50, scale=9.0, seed=42):
+    
     """
     Generates an image from a text prompt and saves it.
 
